@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChemiPuzzle</title>
+    <link  rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+<div id="backgroundText" class="backgroundText" align="center">ChemiPuzzle</div>
+<div id="MainContainer" class="MainContainer">
+    <div><img alt="" src="png/C0100O.png"/><img data-r="1" alt="" style="top:02px;left:02px;" src="png/SH.png"/></div>
+    <div><img alt="" src="png/C0101O.png"/><img data-r="1" alt="" style="top:02px;left:05px;" src="png/S1D.png"/></div>
+    <div><img alt="" src="png/C2020O.png"/><img data-r="1" alt="" style="top:05px;left:06px;" src="png/S2D.png"/></div>
+    <div><img alt="" src="png/C0303O.png"/><img data-r="1" alt="" style="top:04px;left:12px;" src="png/S3D.png"/></div>
+    <div><img alt="" src="png/C1111I.png"/><img data-r="0" alt="" style="top:18px;left:22px;" src="png/SC.png"/></div>
+    <div><img alt="" src="png/C1110I.png"/><img data-r="0" alt="" style="top:-1px;left:16px;" src="png/SC-.png"/></div>
+    <div><img alt="" src="png/C1110I.png"/><img data-r="0" alt="" style="top:07px;left:17px;" src="png/SC+.png"/></div>
+    <div><img alt="" src="png/C1110I.png"/><img data-r="0" alt="" style="top:20px;left:20px;" src="png/SN.png"/></div>
+    <div><img alt="" src="png/C0110I.png"/><img data-r="0" alt="" style="top:08px;left:16px;" src="png/SN-.png"/></div>
+    <div><img alt="" src="png/C1111I.png"/><img data-r="0" alt="" style="top:06px;left:14px;" src="png/SN+.png"/></div>
+    <div><img alt="" src="png/C0110I.png"/><img data-r="0" alt="" style="top:22px;left:25px;" src="png/SO.png"/></div>
+    <div><img alt="" src="png/C0100I.png"/><img data-r="0" alt="" style="top:09px;left:17px;" src="png/SO-.png"/></div>
+    <div><img alt="" src="png/C1110I.png"/><img data-r="0" alt="" style="top:08px;left:12px;" src="png/SO+.png"/></div>
+    <div><img alt="" src="png/C0100I.png"/><img data-r="0" alt="" style="top:19px;left:27px;" src="png/SF.png"/></div>
+    <div><img alt="" src="png/C0100I.png"/><img data-r="0" alt="" style="top:20px;left:19px;" src="png/SCL.png"/></div>
+    <div><img alt="" src="png/C0100I.png"/><img data-r="0" alt="" style="top:18px;left:19px;" src="png/SBR.png"/></div>
+    <div><img alt="" src="png/C0100I.png"/><img data-r="0" alt="" style="top:20px;left:33px;" src="png/SI.png"/></div>
+
+
+    <div><img alt="" src="png/C1201I.png"/><img data-r="0" alt="" style="top:18px;left:22px;" src="png/SC.png"/></div>
+    <div><img alt="" src="png/C0202I.png"/><img data-r="0" alt="" style="top:18px;left:22px;" src="png/SC.png"/></div>
+    <div><img alt="" src="png/C0301I.png"/><img data-r="0" alt="" style="top:18px;left:18px;" src="png/SC.png"/></div>
+    <div><img alt="" src="png/C0300I.png"/><img data-r="0" alt="" style="top:-1px;left:16px;" src="png/SC-.png"/></div>
+    <div><img alt="" src="png/C1200I.png"/><img data-r="0" alt="" style="top:20px;left:20px;" src="png/SN.png"/></div>
+    <div><img alt="" src="png/C1201I.png"/><img data-r="0" alt="" style="top:06px;left:14px;" src="png/SN+.png"/></div>
+    <div><img alt="" src="png/C0202I.png"/><img data-r="0" alt="" style="top:06px;left:14px;" src="png/SN+.png"/></div>
+    <div><img alt="" src="png/C0200I.png"/><img data-r="0" alt="" style="top:08px;left:16px;" src="png/SN-.png"/></div>
+    <div><img alt="" src="png/C0300I.png"/><img data-r="0" alt="" style="top:20px;left:20px;" src="png/SN.png"/></div>
+    <div><img alt="" src="png/C0200I.png"/><img data-r="0" alt="" style="top:22px;left:25px;" src="png/SO.png"/></div>
+    <div><img alt="" src="png/C1110I.png"/><img data-r="0" alt="" style="top:08px;left:12px;" src="png/SO+.png"/></div>
+    <div><img alt="" src="png/C1200I.png"/><img data-r="0" alt="" style="top:08px;left:12px;" src="png/SO+.png"/></div>
+    <div><img alt="" src="png/C0300I.png"/><img data-r="0" alt="" style="top:08px;left:12px;" src="png/SO+.png"/></div>
+</div>
+<div align="center" class="NameContainer">
+    <img src="png/happy.png">
+    <div align="center">
+        <div>
+            <label for="Name" id="NameLabel">Please enter your name </label><span>: </span><input id="NameInput" type="text" id="Name" placeholder="Your Name">
+        </div>
+    </div>
+    <img src="png/happy.png">
+</div>
+<div class="IconContainer">
+    <div></div>
+    <div id="Instructions">
+        <h1>Instructions</h1>
+        <ul>
+            <li>Click on the desired piece to select and drag to the canvas.</li>
+            <li>Press “r” on keyboard to rotate piece.</li>
+            <li>Press “d” or delete to delete piece while moving it.</li>
+        </ul>
+    </div>
+    <button id="PrintButton">Print</button>
+</div>
+<div class="Footer"><div>This project is funded by The American University of the Middle East</div><div>ChemiPuzzle</div></div>
+<script>
+    let moving=false;
+    let toMove=null;
+    let shiftX,shiftY;
+    let divs=document.getElementById("MainContainer").getElementsByTagName("div");
+    let step=1;
+    let body=document.body;
+    let docEl=document.documentElement;
+
+    for(let i=0;i<divs.length;i++) {
+        divs[i].onclick=function (e) {
+            createNew(this,e);
+        };
+    }
+    function createNew(obj,e){
+        let duplicate=obj.cloneNode(true);
+        body.appendChild(duplicate);
+        duplicate.className="ContainerFree";
+        toMove=duplicate;
+        setTimeout(function() {
+            moving=true;
+        }, 10);
+        let coordinates=getCoords(obj);
+        shiftX=coordinates.left-e.pageX;
+        shiftY=coordinates.top-e.pageY;
+        toMove.style.left=coordinates.left+"px";
+        toMove.style.top=coordinates.top+"px";
+        let div=document.createElement("div");
+        let span=document.createElement("span");
+        span.innerHTML="X";
+        span.onclick=function(){
+            Remove(this.parentNode.parentNode);
+        };
+        div.appendChild(span);
+        duplicate.appendChild(div);
+        duplicate.onclick=function(e){
+            Move(this,e)
+        };
+    }
+    function Remove(obj) {
+        obj.parentNode.removeChild(obj);
+    }
+    function getCoords(elem) {
+        let box=elem.getBoundingClientRect();
+        let scrollTop=window.pageYOffset||docEl.scrollTop||body.scrollTop;
+        let scrollLeft=window.pageXOffset||docEl.scrollLeft||body.scrollLeft;
+
+        let clientTop=docEl.clientTop||body.clientTop||0;
+        let clientLeft=docEl.clientLeft||body.clientLeft||0;
+
+        let top=box.top +scrollTop-clientTop;
+        let left=box.left+scrollLeft-clientLeft;
+
+        return { top: Math.round(top), left: Math.round(left) };
+    }
+    function Move(obj,e){
+        if(moving){
+            toMove=null;
+        }else{
+            let posLeft=parseInt(obj.style.left, 10);
+            let posTop=parseInt(obj.style.top, 10);
+            shiftX=posLeft-e.pageX;
+            shiftY=posTop-e.pageY;
+            toMove=obj;
+        }
+        setTimeout(function() {
+            moving=!(toMove==null);
+        }, 10);
+    }
+    document.addEventListener('keyup', (e) => {
+        if(e.key==="r"){
+            if(toMove!==null){
+                let imageToRotate=toMove.getElementsByTagName("img")[0];
+                let last =imageToRotate.style.transform;
+                let rotate=0;
+                if(last===""){
+                    rotate=90;
+                }else{
+                    rotate=parseInt(toMove.dataset.rotate) + 90;
+                    if(rotate===360)rotate=0;
+                }
+                let image=toMove.getElementsByTagName("img")[1];
+                if(image.dataset.r==="1"){
+                    image.style.transform="rotate("+rotate+"deg)";
+                }
+                toMove.dataset.rotate=rotate;
+                imageToRotate.style.transform="rotate("+rotate+"deg)";
+            }
+        }else if(e.key==="Delete"||e.key==="d"){
+            if(toMove!==null){
+                Remove(toMove);
+            }
+        }
+    });
+    document.onclick=function(){
+        if(moving){
+            moving=false;
+        }
+    };
+    document.onmousemove=function(e){
+        if(moving){
+            let val=parseInt((shiftX+e.pageX)/step)*step;
+            toMove.style.left=val+"px";
+            val=parseInt((shiftY+e.pageY)/step)*step;
+            toMove.style.top=val+"px";
+        }
+    };
+    document.getElementById("PrintButton").onclick=function () {
+        document.getElementById("backgroundText").style.display="none";
+        document.getElementById("MainContainer").style.display="none";
+        document.getElementById("NameLabel").style.display="none";
+        document.getElementById("Instructions").style.display="none";
+        document.getElementById("NameInput").style.textAlign="center";
+        this.style.display="none";
+        window.print();
+        document.getElementById("backgroundText").style.display="";
+        document.getElementById("MainContainer").style.display="";
+        document.getElementById("PrintButton").style.display="";
+        document.getElementById("NameLabel").style.display="";
+        document.getElementById("Instructions").style.display="";
+        document.getElementById("NameInput").style.textAlign="left";
+    }
+</script>
+</body>
+</html>

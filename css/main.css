@@ -1,0 +1,224 @@
+.MainContainer{
+    border-left: 0.4vw solid lightslategrey;
+    border-right: 0.4vw solid lightslategrey;
+    border: dotted;
+    border-color: blue;
+    height: 95px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.MainContainer:hover, .ContainerFree:hover{
+    cursor: pointer;
+}
+.MainContainer>div {
+    position: relative;
+    display: inline-block;
+    width: 95px;
+    height: 80px;
+}
+.ContainerFree>div {
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    display: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    width: 9px;
+    height: 10px;
+    left:70px;
+    top:-5px;
+}
+.ContainerFree>div:hover {
+    border: 1px solid red;
+    color: red;
+}
+.ContainerFree>div span{
+    position: absolute;
+    top:-1px;
+    left:1px;
+    font-size: 10px;
+}
+.ContainerFree:hover {
+    z-index: 998;
+}
+.ContainerFree:hover div {
+    display: inline-block;
+    z-index: 999;
+}
+.ContainerFree {
+    position: absolute;
+    display: inline-block;
+    width: 95px;
+    height: 80px;
+}
+.ContainerFree img,.MainContainer div img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ContainerFree img{
+    transform: rotate(0deg);
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+.NameContainer{
+    border: .2vw solid black;
+    display: flex;
+    background-color: lightslategrey;
+}
+.NameContainer input, .NameContainer label, .NameContainer img{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.NameContainer>div{
+    display: inline-block;
+    flex: 84;
+    margin: 0;
+    border: 0;
+}
+.NameContainer div div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+.NameContainer input{
+    flex: 60;
+    border: none;
+    margin-left: 1vw;
+    text-align: left;
+    background: none;
+    font-size: 2.6vw;
+    color: white;
+}
+::placeholder {
+    color: lightgray;
+}
+.NameContainer label{
+    flex: 40;
+    border: none;
+    text-align: right;
+    font-size: 2.6vw;
+    color: white;
+    padding-top: .6vw;
+    font-family: Chemi;
+}
+.NameContainer span{
+    border: none;
+    text-align: right;
+    font-size: 2.6vw;
+    color: white;
+}
+.NameContainer img{
+    height: 8vh;
+    width: auto;
+}
+.backgroundText{
+    color: white;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 8vh;
+    font-family: Chemi;
+}
+@font-face {
+    font-family: Chemi;
+    src: url("../font/HeartBreakingBad-zG0w.ttf");
+}
+.background{
+    background-color: lightslategrey;
+    padding: 0;
+    margin: 0;
+    flex: 10;
+    overflow: hidden;
+}
+.background>div{
+    background: lightslategrey;
+    display: inline-block;
+    width: 1030px;
+    height: 152px;
+}
+.background div img{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.IconContainer{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 70;
+}
+.IconContainer div:first-child{
+    position: relative;
+    flex: 56.2;
+    border-left: 0.2vw solid black;
+    border-right: 0.2vw solid black;
+}
+.IconContainer div:nth-child(2){
+    position: relative;
+    flex: 20;
+    background: lightslategrey;
+    margin: 0;
+    padding: 0;
+    border-right: 0.2vw solid black;
+}
+.IconContainer div ul{
+    font-size: 1.3vw;
+    margin: 0 0 0 4vw;
+    padding: 0;
+}
+.IconContainer div h1{
+    font-size: 4.5vw;
+    padding: 0;
+    margin: 0 0 0 1vw;
+    font-family: Chemi;
+}
+.IconContainer button{
+    transition: box-shadow .1s ease-in-out,right .1s ease-in-out,bottom .1s ease-in-out,border-radius .1s ease-in-out;
+    position: absolute;
+    border: none;
+    background: dodgerblue;
+    right: .4vw;
+    bottom: .4vw;
+    font-family: Chemi;
+    padding: 0 2vw 0 2vw;
+    font-size: 2.5vw;
+    box-shadow: 0.2vw 0.2vw black;
+}
+.IconContainer button:hover{
+    border-radius: .5vw;
+    color: white;
+    cursor: pointer;
+}
+.IconContainer button:active{
+    right: .2vw;
+    bottom: .2vw;
+    box-shadow: 0 0;
+}
+.Footer{
+    flex: 4;
+    border-top: 0.2vw solid black;
+}
+.Footer div{
+    display: inline-block;
+    position: relative;
+    font-size: 2vh;
+}
+.Footer div:last-child{
+    float: right;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
